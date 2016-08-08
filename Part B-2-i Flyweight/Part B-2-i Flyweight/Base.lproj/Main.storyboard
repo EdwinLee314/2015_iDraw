@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Part_B_2_i_Flyweight" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgg-vJ-YHe">
+                                <rect key="frame" x="74" y="28" width="66" height="30"/>
+                                <state key="normal" title="10,000(F)"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kkn-mW-ydx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwd-I3-OK6">
+                                <rect key="frame" x="158" y="28" width="77" height="30"/>
+                                <state key="normal" title="500,000(F)"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NHS-cJ-bjN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJu-6U-wdE">
+                                <rect key="frame" x="257" y="28" width="87" height="30"/>
+                                <state key="normal" title="1,000,000(F)"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bzH-tg-72C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHM-bT-UTF">
+                                <rect key="frame" x="372" y="28" width="87" height="30"/>
+                                <state key="normal" title="1,500,000(F)"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8o3-dt-aWv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHf-3s-ybU">
+                                <rect key="frame" x="480" y="28" width="90" height="30"/>
+                                <state key="normal" title="2,000,000(F)"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NdL-5w-3dl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvo-lt-HCE">
+                                <rect key="frame" x="72" y="66" width="68" height="30"/>
+                                <state key="normal" title="10,000(N)"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XbA-XU-9S3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIG-ac-lWz">
+                                <rect key="frame" x="158" y="66" width="80" height="30"/>
+                                <state key="normal" title="500,000(N)"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ckE-fD-5FU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbl-rJ-HX8">
+                                <rect key="frame" x="255" y="66" width="90" height="30"/>
+                                <state key="normal" title="1,000,000(N)"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4AA-bA-eT8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJR-4E-3Gh">
+                                <rect key="frame" x="372" y="66" width="90" height="30"/>
+                                <state key="normal" title="1,500,000(N)"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qJV-bK-VFq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2a-Ur-mrv">
+                                <rect key="frame" x="480" y="66" width="92" height="30"/>
+                                <state key="normal" title="2,000,000(N)"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zla-Wh-a8h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dgg-vJ-YHe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="0KF-lK-5OQ"/>
+                            <constraint firstItem="dgg-vJ-YHe" firstAttribute="trailing" secondItem="Zvo-lt-HCE" secondAttribute="trailing" id="0ns-Xj-rHe"/>
+                            <constraint firstItem="JJu-6U-wdE" firstAttribute="centerX" secondItem="Cbl-rJ-HX8" secondAttribute="centerX" id="905-Fx-v33"/>
+                            <constraint firstItem="d2a-Ur-mrv" firstAttribute="leading" secondItem="aJR-4E-3Gh" secondAttribute="trailing" constant="18" id="Ja3-hq-LuZ"/>
+                            <constraint firstItem="Cbl-rJ-HX8" firstAttribute="leading" secondItem="XIG-ac-lWz" secondAttribute="trailing" constant="17" id="UPX-tJ-567"/>
+                            <constraint firstItem="pwd-I3-OK6" firstAttribute="leading" secondItem="XIG-ac-lWz" secondAttribute="leading" id="WEX-tO-XFp"/>
+                            <constraint firstItem="JJu-6U-wdE" firstAttribute="baseline" secondItem="pwd-I3-OK6" secondAttribute="baseline" id="bVV-ia-bTz"/>
+                            <constraint firstItem="Cbl-rJ-HX8" firstAttribute="baseline" secondItem="aJR-4E-3Gh" secondAttribute="baseline" id="cat-5V-Wa9"/>
+                            <constraint firstItem="aJR-4E-3Gh" firstAttribute="leading" secondItem="Cbl-rJ-HX8" secondAttribute="trailing" constant="27" id="dMT-BZ-aRw"/>
+                            <constraint firstItem="JJu-6U-wdE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fre-yL-ugg"/>
+                            <constraint firstItem="XIG-ac-lWz" firstAttribute="baseline" secondItem="Zvo-lt-HCE" secondAttribute="baseline" id="hP0-1e-mFG"/>
+                            <constraint firstItem="hHf-3s-ybU" firstAttribute="leading" secondItem="d2a-Ur-mrv" secondAttribute="leading" id="j5Y-xC-8Eh"/>
+                            <constraint firstItem="d2a-Ur-mrv" firstAttribute="baseline" secondItem="aJR-4E-3Gh" secondAttribute="baseline" id="kwl-6h-Vuw"/>
+                            <constraint firstItem="aJR-4E-3Gh" firstAttribute="leading" secondItem="HHM-bT-UTF" secondAttribute="leading" id="lkm-de-fPP"/>
+                            <constraint firstItem="hHf-3s-ybU" firstAttribute="baseline" secondItem="HHM-bT-UTF" secondAttribute="baseline" id="mVa-c0-KVd"/>
+                            <constraint firstItem="Zvo-lt-HCE" firstAttribute="top" secondItem="dgg-vJ-YHe" secondAttribute="bottom" constant="8" symbolic="YES" id="qYg-Oe-2NO"/>
+                            <constraint firstItem="Cbl-rJ-HX8" firstAttribute="baseline" secondItem="XIG-ac-lWz" secondAttribute="baseline" id="sOi-Ar-kTk"/>
+                            <constraint firstItem="pwd-I3-OK6" firstAttribute="leading" secondItem="dgg-vJ-YHe" secondAttribute="trailing" constant="18" id="u2G-nR-xdu"/>
+                            <constraint firstItem="HHM-bT-UTF" firstAttribute="baseline" secondItem="JJu-6U-wdE" secondAttribute="baseline" id="xJe-Nt-Wbl"/>
+                            <constraint firstItem="dgg-vJ-YHe" firstAttribute="baseline" secondItem="pwd-I3-OK6" secondAttribute="baseline" id="zEs-Ig-lHY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
